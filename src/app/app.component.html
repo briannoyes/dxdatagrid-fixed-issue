@@ -1,0 +1,8 @@
+<dx-data-grid [dataSource]="data" [columnAutoWidth]="true" [showColumnLines]="true"
+[showRowLines]="true" [selection]="{ mode: 'single' }" [columnFixing]="true"
+[wordWrapEnabled]="true" [noDataText]="''"
+[allowColumnResizing]="true" [focusStateEnabled]="true">
+<dxo-column-fixing [enabled]="true"></dxo-column-fixing>
+<dxi-column caption="Ref" dataField="seqNum" dataType="number" [allowEditing]="false" [width]="60" alignment="center" [fixed]="true"></dxi-column>
+<dxi-column caption="Notes" dataField="notes" dataType="string" alignment="left" ></dxi-column>
+</dx-data-grid>
